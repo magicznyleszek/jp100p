@@ -24,7 +24,6 @@
     <meta property="og:url" content="{{ site.baseurl }}">
     <meta property="og:image" content="{{ site.baseurl }}/public/images/image-200.png"/>
 
-    {% comment %}
     <!-- style & viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ site.baseurl }}/public/styles/main.css?version=1" media="all" rel="stylesheet">
@@ -36,9 +35,8 @@
     <!-- fonts -->
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext" rel="stylesheet">
     <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
-    {% endcomment %}
 
 </head>
 
 <body>
-    {% include icons.svg %}
+    <div style="width: 0; height: 0; overflow: hidden; position: fixed; visibility: hidden;">{% include icons.svg %}</div>
