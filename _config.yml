@@ -6,7 +6,7 @@ author: "Leszek Pietrzak"
 
 # address settings
 baseurl: "http://jp100p.smutnyleszek.com"
-permalink: /project/:title
+permalink: /projects/:title
 
 # site configuration
 safe: true
