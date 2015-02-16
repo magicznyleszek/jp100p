@@ -19,7 +19,8 @@ module.exports = function(grunt) {
         compass: {
             build: {
                 options: {
-                    config: '_assets/config.rb'
+                    config: '_assets/config.rb',
+                    basePath: '_assets'
                 }
             }
         },
@@ -62,5 +63,6 @@ module.exports = function(grunt) {
 
     // register tasks
     grunt.registerTask('default', ['watch']);
+    grunt.registerTask('build', ['svgstore', 'compass', 'uglify']);
 
 };
