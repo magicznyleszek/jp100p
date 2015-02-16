@@ -1,0 +1,19 @@
+# description
+name: "JP100%"
+description: "Short description"
+keywords: "foo, bar, fum, baz, qux, zot"
+author: "Leszek Pietrzak"
+
+# address settings
+baseurl: "http://jp100p.smutnyleszek.com"
+permalink: /project/:title
+
+# site configuration
+safe: true
+quiet: false
+future: true
+encoding: utf-8
+markdown: kramdown
+kramdown:
+    auto_ids: false
+timezone: Europe/Warsaw

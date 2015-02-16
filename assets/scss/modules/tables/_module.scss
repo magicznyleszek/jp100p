@@ -1,0 +1,46 @@
+//------------------------------------------------------------------------------
+// tables module
+//------------------------------------------------------------------------------
+
+@import 'modules/tables/config';
+
+[am-table] {
+    td, th {
+        border: 1px solid $table-border-c;
+        padding: rem($w-small);
+        min-width: rem(80px);
+        max-width: rem(400px);
+    }
+    th {
+        background-color: $table-header-bg-c;
+    }
+    tr {
+        &:hover {
+            background-color: $table-row-bg-hover-c;
+        }
+    }
+    thead {
+        tr {
+            td {
+                font-weight: 700;
+            }
+        }
+    }
+    tbody {
+        tr {
+            td {
+                //
+            }
+        }
+    }
+    tfoot {
+        tr {
+            &:first-child {
+                border-top: 2px solid $table-border-c;
+            }
+            td {
+                //
+            }
+        }
+    }
+}

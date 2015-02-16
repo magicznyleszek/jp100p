@@ -1,0 +1,87 @@
+//------------------------------------------------------------------------------
+// root stuff and normalizations
+//------------------------------------------------------------------------------
+
+body {
+    overflow: auto;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    &:visited {
+        color: inherit;
+    }
+    &:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+hr {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: $hr-h;
+    border: 0;
+    background-color: $hr-bg-c;
+}
+
+:focus {
+    outline-color: $focus-outline-c;
+    outline-style: auto;
+    outline-width: 0.25rem;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+img, svg, embed, object, video {
+    max-width: 100%;
+}
+
+::selection {
+    color: $selection-txt-c;
+    background-color: $selection-bg-c;
+}
+
+::-moz-selection {
+    color: $selection-txt-c;
+    background-color: $selection-bg-c;
+}
+
+*[disabled] {
+    pointer-events: none;
+    @include opacity($input-disabled-o);
+}
+
+input, select, textarea, button {
+    @include input-placeholder {
+        font-size: inherit;
+        line-height: $rootLineHeight;
+        color: $input-placeholder-txt-c;
+    }
+}
+
+code {
+    font-family: $code-family;
+    font-size: $p-giant;
+    background-color: $code-bg-c;
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+    @include box-shadow($code-sh);
+    @include border-radius($code-br);
+}
+
+pre {
+    code {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        @include box-sizing(border-box);
+        padding: 0.5rem;
+    }
+}
