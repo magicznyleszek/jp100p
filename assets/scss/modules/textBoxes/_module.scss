@@ -1,0 +1,33 @@
+//------------------------------------------------------------------------------
+// textBoxes module
+//------------------------------------------------------------------------------
+
+/*
+    <input am-textBox='light' type='text' id='TEXTBOXID'>
+*/
+
+[am-textBox] {
+    @include appearance(initial);
+    outline: 0;
+    margin: 0;
+    border: 0;
+    padding: rem($space-tiny);
+    color: $input-txt-c;
+    @include box-shadow($input-sh);
+    background-color: $input-bg-c;
+    border-radius: $input-br;
+    display: inline-block;
+    vertical-align: middle;
+    &:not([disabled]):hover {
+        background-color: $input-bg-hover-c;
+    }
+    &:not([disabled]):focus {
+        background-color: $input-bg-focus-c;
+    }
+}
+
+[am-textBox~='naked'] {
+    color: inherit;
+    @include box-shadow(none);
+    background-color: transparent;
+}

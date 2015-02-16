@@ -1,0 +1,15 @@
+//------------------------------------------------------------------------------
+// progresses config
+//------------------------------------------------------------------------------
+
+// common
+$progress-h: rem($w-small);
+$progress-br: rem($w-small * 0.5);
+$progress-indicator-min-w: $progress-h;
+
+// default
+$progress-default-bg-c: rgba($c-black, $f-medium);
+$progress-default-indicator-bg-c: $c-black;
+
+// inline
+$progress-inline-w: rem(160px);
