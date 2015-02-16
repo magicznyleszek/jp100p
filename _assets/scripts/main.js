@@ -1,6 +1,5 @@
 projectInterface = function () {
-    // declare a public run function with all private stuff initialized inside of it
-    this.run = run;
+
     run = function () {
         doSomething();
     }
@@ -11,6 +10,8 @@ projectInterface = function () {
             console.log('Hello world!');
         }
     }
+
+    this.run = run;
 };
 
 // create a public object and start its run function
