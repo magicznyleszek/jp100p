@@ -1,0 +1,14 @@
+[
+    {
+        "label": "3D Model",
+        "slug": "3d-model"
+    },
+    {
+        "label": "Animation",
+        "slug": "animation"
+    },
+    {
+        "label": "Visualisation",
+        "slug": "visualisation"
+    }
+]

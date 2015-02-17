@@ -1,6 +1,6 @@
 ---
-title: Test post
-categories: [3d-model, visualisation]
+title: Ray of Bradbury
+categories: [animation, visualisation]
 layout: post
 ---
 
