@@ -9,7 +9,7 @@ layout: default
 <ul>
     {% for category in site.data.categories %}
         <li>
-            <a href="{{ site.baseUrl }}/category/{{ category.slug }}">{{ category.label }}</a>
+            <a href="{{ site.url }}/category/{{ category.slug }}">{{ category.label }}</a>
         </li>
     {% endfor %}
 </ul>
