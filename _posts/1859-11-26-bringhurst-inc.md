@@ -1,6 +1,6 @@
 ---
-title: Test post
-categories: [3d-model, visualisation]
+title: Bringhurst Inc.
+categories: [animation]
 layout: post
 ---
 

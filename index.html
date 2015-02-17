@@ -2,17 +2,14 @@
 layout: default
 ---
 
-<h1>Hello world!</h1>
+<h1>Hello architecture! <svg am-icon="big"><use xlink:href="#icon-pyramid"></svg></h1>
 
-<p>Here are some dinosaurs:</p>
+<p>Here are some categories:</p>
 
 <ul>
-    {% for dinosaur in site.data.dinosaurs %}
+    {% for category in site.data.categories %}
         <li>
-            <a href="{{ dinosaur.url }}" target="_blank">{{ dinosaur.name }}</a>
-            {% for category in dinosaur.categories %}
-                <a href="{{ site.baseurl }}/category/{{ category }}">{{ category }}</a>
-            {% endfor %}
+            <a href="{{ site.baseUrl }}/category/{{ category.slug }}">{{ category.label }}</a>
         </li>
     {% endfor %}
 </ul>
@@ -26,5 +23,3 @@ layout: default
         </li>
     {% endfor %}
 </ul>
-
-<p>Nice one <svg am-icon="big"><use xlink:href="#icon-pyramid"></svg></p>
