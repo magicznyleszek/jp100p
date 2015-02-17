@@ -5,7 +5,7 @@ keywords: "foo, bar, fum, baz, qux, zot"
 author: "Leszek Pietrzak"
 
 # address settings
-baseurl: "http://jp100p.smutnyleszek.com"
+url: "http://jp100p.smutnyleszek.com"
 permalink: /projects/:title
 
 # site configuration
