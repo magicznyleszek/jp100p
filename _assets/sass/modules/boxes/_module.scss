@@ -15,6 +15,12 @@
 [am-box~='inline'] {
     display: inline-block;
     vertical-align: middle;
+    &[am-box~="inline-hung"] {
+        vertical-align: top;
+    }
+    &[am-box~="inline-grown"] {
+        vertical-align: bottom;
+    }
 }
 
 [am-box~='padded'] {
