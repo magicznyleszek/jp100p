@@ -5,7 +5,10 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         svgstore: {
             options: {
-                prefix : 'icon-',
+                prefix: 'icon-',
+                svg: {
+                    style: 'width: 0; height: 0; overflow: hidden; position: fixed; visibility: hidden;'
+                },
                 formatting : {
                     indent_size : 4
                 }

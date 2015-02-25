@@ -30,6 +30,11 @@
     margin-left: $space-small;
 }
 
+[am-icon~='colossal'] {
+    width: rem($w-colossal);
+    height: rem($w-colossal);
+}
+
 [am-icon~='big'] {
     width: rem($w-big);
     height: rem($w-big);

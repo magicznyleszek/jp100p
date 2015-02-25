@@ -1,7 +1,17 @@
 <header id="appHeader">
+
     <nav>
-        <ul am-list>
+        <ul am-list="inline spaced">
             <li><a href="/">Home</a></li>
+            <li><strong>Categories:</strong></li>
+            {% for category in site.data.categories %}
+                <li>
+                    <a href="/category/{{ category.slug }}">{{ category.label }}</a>
+                </li>
+            {% endfor %}
         </ul>
     </nav>
+
+    <h1><svg am-icon="colossal"><use xlink:href="#icon-pyramid"></svg> {{ site.name }}</h1>
+
 </header>
