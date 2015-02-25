@@ -3,21 +3,45 @@
 
     <section id="appContent" role="main">
 
-        <h1>{{ page.title }}</h1>
+        <article>
 
-        {{ content }}
+            <header>
+                <h1>{{ page.title }}</h1>
+            </header>
 
-        <footer class="single-post-meta">
-            <time datetime="{{ page.date }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %Y" }}</time>
-            <section class="adjacent-posts">
-                {% if page.previous.url %}
-                    <a href="{{ site.url }}{{ page.previous.url }}"><i class="fa fa-arrow-left"></i> Previus post</a>
-                {% endif %}
-                {% if page.next.url %}
-                    <a href="{{ site.url }}{{ page.next.url }}">Next post <i class="fa fa-arrow-right"></i></a>
-                {% endif %}
-            </section>
-        </footer>
+            <h2>Description:</h2>
+
+            {{ content }}
+
+            <h2>Gallery:</h2>
+
+            {% include modules/post-gallery.liquid images=page.gallery slug=page.slug %}
+
+            <footer>
+
+                <time datetime="{{ page.date }}">
+                    <i class="fa fa-clock-o"></i> {{ page.date | date: "%B %Y" }}
+                </time>
+
+            </footer>
+
+        </article>
+
+        <section>
+
+            {% if page.previous.url %}
+                <a href="{{ site.url }}{{ page.previous.url }}">
+                    <i class="fa fa-arrow-left"></i> Previus post
+                </a>
+            {% endif %}
+
+            {% if page.next.url %}
+                <a href="{{ site.url }}{{ page.next.url }}">
+                    Next post <i class="fa fa-arrow-right"></i>
+                </a>
+            {% endif %}
+
+        </section>
 
     </section>
 
