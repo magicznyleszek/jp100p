@@ -4,22 +4,18 @@ layout: default
 
 <h1>Hello architecture! <svg am-icon="big"><use xlink:href="#icon-pyramid"></svg></h1>
 
-<p>Here are some categories:</p>
+<h2>Categories:</h2>
 
-<ul>
+<ul am-list="inline">
     {% for category in site.data.categories %}
         <li>
-            <a href="{{ site.url }}/category/{{ category.slug }}">{{ category.label }}</a>
+            <a href="/category/{{ category.slug }}">{{ category.label }}</a>
         </li>
     {% endfor %}
 </ul>
 
-<p>Some posts:</p>
+<h2>Projects:</h2>
 
-<ul>
-    {% for post in site.posts %}
-        <li>
-            {% include modules/post-summary.liquid %}
-        </li>
-    {% endfor %}
-</ul>
+{% for post in site.posts %}
+    {% include modules/post-summary.liquid %}
+{% endfor %}

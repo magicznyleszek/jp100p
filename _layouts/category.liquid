@@ -3,17 +3,13 @@
 
     <section id="appContent" role="main">
 
-        <h1>{{ page.category }}</h1>
+        <h1>{% include helpers/category-label.liquid category=page.category %}</h1>
 
-        <ul>
-            {% for post in site.posts %}
-                {% if post.categories contains page.category %}
-                    <li>
-                        {% include modules/post-summary.liquid %}
-                    </li>
-                {% endif %}
-            {% endfor %}
-        </ul>
+        {% for post in site.posts %}
+            {% if post.categories contains page.category %}
+                {% include modules/post-summary.liquid %}
+            {% endif %}
+        {% endfor %}
 
     </section>
 
