@@ -3,7 +3,7 @@
 
     <section id="appContent" role="main">
 
-        <h1>{% include helpers/category-label.liquid category=page.category %}</h1>
+        <h2>{% include helpers/category-label.liquid category=page.category %}:</h2>
 
         {% for post in site.posts %}
             {% if post.categories contains page.category %}
