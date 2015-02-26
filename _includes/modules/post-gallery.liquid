@@ -1,8 +1,8 @@
 <section>
     {% for image in include.images %}
-        <a href="/public/images/{{ include.slug }}/{{ image }}">
+        <a href="/public/images/{{ include.slug }}/original/{{ image }}">
             <img
-                src="/public/images/{{ include.slug }}/{{ image }}"
+                src="/public/images/{{ include.slug }}/large/{{ image }}"
                 alt="{{ image }}"
             >
         </a>

@@ -2,7 +2,7 @@
 title: Ray of Bradbury
 slug: ray-of-bradbury
 categories: [animation, visualisation]
-cover: nakahouse-cover.jpg
+cover: nakahouse-2.jpg
 gallery:
     - nakahouse-1.jpg
     - nakahouse-2.jpg
