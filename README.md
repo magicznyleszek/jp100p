@@ -8,3 +8,8 @@ Todo:
     - get all design elements and guidelines
     - customize styles to fit above
     - use magnific-popup for showing images
+
+Needs:
+
+- GraphicsMagick (best with Homebrew: `brew install GraphicsMagickz`)
+- Grunt

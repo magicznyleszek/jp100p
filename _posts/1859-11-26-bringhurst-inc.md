@@ -2,7 +2,7 @@
 title: Bringhurst Inc.
 slug: bringhurst-inc
 categories: [animation]
-cover: melides-cover.jpg
+cover: melides-3.jpg
 gallery:
     - melides-1.jpg
     - melides-2.jpg
