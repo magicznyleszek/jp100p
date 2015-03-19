@@ -2,4 +2,25 @@
 // fonts
 //------------------------------------------------------------------------------
 
-// define stuff here if you don't use webfont service
+@font-face {
+    font-family: 'Mplus';
+    src: url('../fonts/mplus-1c-light-webfont.eot');
+    src: url('../fonts/mplus-1c-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mplus-1c-light-webfont.woff') format('woff'),
+         url('../fonts/mplus-1c-light-webfont.ttf') format('truetype'),
+         url('../fonts/mplus-1c-light-webfont.svg#m_1clight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Mplus';
+    src: url('../fonts/mplus-1c-medium-webfont.eot');
+    src: url('../fonts/mplus-1c-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/mplus-1c-medium-webfont.woff') format('woff'),
+         url('../fonts/mplus-1c-medium-webfont.ttf') format('truetype'),
+         url('../fonts/mplus-1c-medium-webfont.svg#m_1cmedium') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
