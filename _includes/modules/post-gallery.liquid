@@ -2,8 +2,12 @@
     {% for image in include.images %}
         <a href="/public/images/{{ include.slug }}/original/{{ image }}">
             <img
-                src="/public/images/{{ include.slug }}/large/{{ image }}"
                 alt="{{ image }}"
+                src="/public/images/{{ include.slug }}/large/{{ image }}"
+                srcset="
+                    /public/images/{{ include.slug }}/large/{{ image }} 1x,
+                    /public/images/{{ include.slug }}/large-x2/{{ image }} 2x
+                "
             >
         </a>
     {% endfor %}

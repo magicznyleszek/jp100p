@@ -2,8 +2,7 @@
 
 Todo:
 
-- introduce responsive images with https://github.com/andismith/grunt-responsive-images and https://github.com/smaxtastic/grunt-responsive-images-extender
-- update grunt configuration based on https://github.com/smutnyleszek/carcascorer
+- introduce responsive images with https://github.com/andismith/grunt-responsive-images
 - use https://github.com/gruntjs/grunt-contrib-imagemin
 - start styling
     - get all design elements and guidelines

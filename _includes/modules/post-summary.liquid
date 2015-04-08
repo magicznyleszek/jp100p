@@ -1,7 +1,14 @@
 <div am-box="inline inline-hung padded">
 
     <a href="{{ post.url }}">
-        <img src="/public/images/{{ post.slug }}/thumb/{{ post.cover }}" alt="{{ post.title }}" />
+        <img
+            alt="{{ post.title }}"
+            src="/public/images/{{ post.slug }}/thumb/{{ post.cover }}"
+            srcset="
+                /public/images/{{ post.slug }}/thumb/{{ post.cover }} 1x,
+                /public/images/{{ post.slug }}/thumb-x2/{{ post.cover }} 2x
+            "
+        >
     </a>
 
     <div><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></div>

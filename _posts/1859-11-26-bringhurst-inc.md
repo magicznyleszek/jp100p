@@ -2,11 +2,21 @@
 title: Bringhurst Inc.
 slug: bringhurst-inc
 categories: [animation]
-cover: melides-3.jpg
+cover: dae-view-02.jpg
 gallery:
-    - melides-1.jpg
-    - melides-2.jpg
-    - melides-3.jpg
+    - dae-view-01.jpg
+    - dae-view-02.jpg
+    - dae-view-03.jpg
+    - dae-view-05.jpg
+    - dae-view-06.jpg
+    - dae-wall-section.jpg
+    - plan-1st.jpg
+    - plan-2nd.jpg
+    - plan-3rd.jpg
+    - plan-4th.jpg
+    - section-aa.jpg
+    - section-bb.jpg
+    - siteplan.jpg
 layout: post
 ---
 
